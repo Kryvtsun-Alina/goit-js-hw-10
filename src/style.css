@@ -1,0 +1,39 @@
+.hidden {
+    display: none;
+}
+
+.loader {
+    font-size: 35px;
+    color: rgb(28, 6, 74);
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.loader:after {
+    content: '';
+    height: 4px;
+    width: 0%;
+    display: block;
+    background: rgb(26, 128, 0);
+    animation: lineGrow 3s linear infinite;
+}
+
+.cat-info {
+    display: flex;
+}
+
+.cat-container {
+    width: 400px;
+}
+
+.img {
+    margin-right: 30px;
+}
+
+@keyframes lineGrow {
+    to {
+        width: 100%;
+    }
+}
