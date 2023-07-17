@@ -11,3 +11,23 @@ const refs = {
     error: document.querySelector('.error'),
   };
   const { select, catInfo, loader, error } = refs;
+
+select.classList.add('hidden');
+error.classList.add('hidden');
+loader.style.display = 'block';
+
+fetchBreeds()
+  .then(breeds => onSelected(breeds))
+  .catch(error);
+
+  function onSelected(breeds) {
+    const options = breeds.map(({ id, name }) => ({
+      text: name,
+      value: id,
+    }));
+    const slimSelect = new SlimSelect({
+      select: select,
+    });
+    slimSelect.setData(options);
+    loader.style.display = 'none';
+  }

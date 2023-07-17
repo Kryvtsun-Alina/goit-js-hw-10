@@ -19,21 +19,3 @@
     background: rgb(26, 128, 0);
     animation: lineGrow 3s linear infinite;
 }
-
-.cat-info {
-    display: flex;
-}
-
-.cat-container {
-    width: 400px;
-}
-
-.img {
-    margin-right: 30px;
-}
-
-@keyframes lineGrow {
-    to {
-        width: 100%;
-    }
-}
