@@ -1,0 +1,2 @@
+.hidden{display:none}.loader{color:#1c064a;font-family:Arial,Helvetica,sans-serif;font-size:35px;font-weight:400;display:block;position:relative}.loader:after{content:"";height:4px;width:0%;background:#1a8000;animation:lineGrow 3s linear infinite;display:block}.cat-info{display:flex}.cat-container{width:400px}.picture{margin-right:30px}@keyframes lineGrow{to{width:100%}}
+/*# sourceMappingURL=index.cdc7a83d.css.map */
